@@ -1,0 +1,46 @@
+<div class="slide">           
+    
+     @for (item of array; track $index; let i = $index) {
+        
+    <div class="card">
+
+        
+
+        <div class="card1">
+             
+                <img src="{{array[i].picture}}"   > 
+                 
+                <div class="name"> {{array[i].name}}</div>
+               
+                <div class="stars">
+
+                @for (item of array[i].stars; track $index) {
+                    
+                    <div style="width: 35px; height: 30px;"> <img src="https://i.ibb.co/Bf6RfVZ/demonhead.png"></div>
+                } 
+                </div> 
+
+         </div>
+
+
+         <div class="card2">
+
+                <div class="traits">Traits</div>
+
+                <div class="traitsList"> 
+                        @for (trait of array[i].traits; track $index; let idx = $index) {
+                            
+                                <div>{{array[i].traits[idx]}}</div>
+                          }
+                </div>
+                
+         </div>
+         <!------------------------------------------------->
+
+        
+    </div>}
+
+     
+</div> 
+
+

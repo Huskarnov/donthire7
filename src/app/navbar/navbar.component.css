@@ -1,0 +1,131 @@
+
+.nav{
+    background-color: #010125;
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+  }
+
+  @media (max-width: 768px) {
+    .nav{
+      flex-direction: column;
+      background-color: black;
+    }
+  }
+
+  
+  .navleft{
+   
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 2px;
+    margin-left: 2%;
+    
+    
+  }
+  .navright{  
+   
+    font-family: 'Monkey';
+     color: #F1E9D9;  
+    
+
+    height: 100%;
+    margin-right: 2%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+   
+  }
+
+  .navright span:hover{
+    color:#F56048 ;
+    transform: scale(1.1);
+  }
+  .navright a:hover{
+    color:#F56048 ;
+    transform: scale(1.1);
+  }
+ 
+  
+  .navright a{
+    margin-left: 70px;
+    cursor: pointer;
+  }
+  
+  .logo-image{
+    height: 80%;
+    animation: logoRotate 30s linear infinite;
+  }
+
+  .glow{
+    animation: glow 0.8s ease-in-out 0s infinite alternate none;
+    text-decoration:none    ;
+    color: inherit;
+  }
+  @keyframes glow {
+    0%  { text-shadow: 0 0 22px #F56048, 0 0 15px #ffffff, 0 0 10px #F56048}
+  }
+
+  
+  @keyframes logoRotate {
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    
+  }
+  
+  .logo-text {
+    text-align: center;
+    width: 180px;
+  }
+  
+  
+  .logo-text .top{
+  font-family: 'Monkey';
+  color: #010125;
+  background-color: #F1E9C9; 
+  border-top-right-radius: 11px; 
+  border-top-left-radius: 11px;
+  font-weight:bolder;
+  }
+  
+  .logo-text .bottom{
+  
+    font-size:x-small;
+    color: #F1E9D9;
+    font-weight:bold;
+    background-color:#F56048;
+    border-bottom-left-radius:11px; 
+    border-bottom-right-radius: 11px;
+  
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    color: rgb(62, 80, 158);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
