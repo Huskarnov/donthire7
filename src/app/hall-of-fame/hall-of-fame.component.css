@@ -1,13 +1,54 @@
-.slide{
-      
+.totality{
     height: 100%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+  }
+
+.hallOfFame{
+    color: #010125;
+    cursor:default;
+    height: 100%;
+    font-family: 'Monkey';
+    font-size: 80px;
+ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+.slide{
+   
+    height: 100%;
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    
+ }   
+
+.card{
+     
+    
+    height: 80%;
+    width: 15%;
+    border-radius: 30px;
     background-color: transparent;
-}   
+    font-family:'Monkey';
+    cursor: pointer;
+
+   
+    
+    
+     
+     
+}  
+
+
 .card2{
     font-family: 'Monkey';
     font-size: inherit;
@@ -56,34 +97,23 @@
     
 
 }
-.card{
-     
-    
-    height: 100%;
-    width: 15%;
-    border-radius: 30px;
-    background-color: transparent;
-    font-family:'Monkey';
-    cursor: pointer;
-
-   
-    
-    
-     
-     
-}   
+ 
 
 .card:hover{
-    transform: scale(1.25) translateY(-10px);
+    transition: 0.2s ease-in ;
+    transform: scale(1.1   );
 
     z-index: 1000; 
-    box-shadow: 0 3px #F56048, 0 3.5px #F56048;
+    box-shadow: 0 0 5px #f55f48a8, 0 0 5px #c96b068f,0 0 5px #f55f48a8, inset 0 0 11px #f55f48a8, 
+                0 0 33px #f55f48a8, 0 0 33px #f55f48a8, 0 0 33px #f5e448a8 ;
 }
 
 .card:hover .card1{
+ 
     display:none;
 }
 .card:hover .card2{
+ 
     display: grid;
 
  

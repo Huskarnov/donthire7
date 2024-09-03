@@ -1,19 +1,18 @@
 
-.nav{
+.navigation{
     background-color: #010125;
-    height: 6em;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: sticky;
   }
 
-  @media (max-width: 768px) {
-    .nav{
+  /* @media (max-width: 768px) {
+    .navnavigation{
       flex-direction: column;
       background-color: black;
     }
-  }
+  } */
 
   
   .navleft{
