@@ -59,7 +59,7 @@
     display: none;
     grid-template-rows: 20% 1fr;
     border-radius: 30px;
-    
+    opacity: 0.6;
  
 
 }
@@ -93,33 +93,37 @@
     width: 100%;
     display: grid;
     grid-template-rows: 70% 15% 15%;
-    transition: transform 0.3s ease;
+    
     
 
 }
  
 
 .card:hover{
-    transition: 0.2s ease-in ;
-    transform: scale(1.1   );
+    transition: 0.3s ease-in-out ;
+    transform: scale(1.1);
+
+    background-color: #010125;
 
     z-index: 1000; 
     box-shadow: 0 0 5px #f55f48a8, 0 0 5px #c96b068f,0 0 5px #f55f48a8, inset 0 0 11px #f55f48a8, 
                 0 0 33px #f55f48a8, 0 0 33px #f55f48a8, 0 0 33px #f5e448a8 ;
 }
 
+
 .card:hover .card1{
  
     display:none;
 }
 .card:hover .card2{
- 
+    
     display: grid;
-
- 
-     
+    animation: appear 0.3s ease forwards;
 }
 
+@keyframes appear {
+    100%{opacity: 1;}
+}
 
 img{
     width: 100%;
